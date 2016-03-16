@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flashcards</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+	<script src="/js/controllers.js"></script>
+</head>
+<body ng-app='flashcardApp' ng-controller='flashcardController'>
+	<h1>Flashcards</h1>
+	<button ui-sref='homeState'>Home</button> 
+	<button ui-sref='listState'>List</button> 
+	<ui-view> </ui-view>
+	{{test}} {{getFlashcard() | json}}
+</body>
+</html>
